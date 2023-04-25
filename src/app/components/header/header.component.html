@@ -1,1 +1,54 @@
-<p>header works!</p>
+
+<section id="inicio">
+  <div class="contenido">
+    <header>
+        <div class="contenido-header">
+            <a href="yo programo.png"><img src="./assets/yo programo.png" alt="" width="150px"></a>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" class="seleccionado">inicio</a></li>
+                    <li><a href="#acerca_de">acerca_de</a></li>
+                    <li><a href="#experiencia">experiencia</a></li>
+                    <li><a href="#educacion">educacion</a></li>
+                    <li><a href="#habilidades">habilidades</a></li>
+                    <li><a href="#proyectos">proyectos</a></li>
+                </ul>
+            </nav>
+            <!--iconos del menu-->
+            <div id="icono-nav" onclick="responsiveMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!--redes-->
+            <div class="redes">
+                <div>
+                  <a href=""><i class="fa-brands fa-github"></i></a>
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+              </div>
+              <div id="login2" onclick="registrarse()">
+                <i class="fa-solid fa-right-to-bracket">  ingresar</i>
+            </div>
+          </div>
+      </header>
+      <div class="presentacion">
+          <p class="bienvenida">bienvenidos</p>
+          <h2><span id="nombre_presentacion">Leonardo Velazque</span></h2>
+          <h2>Developer Full Stack Junior</h2>
+          <p class="descripcion">una descripcion en la que no se que poner jasjsj</p>
+          <a href="#acerca_de">ir a portfolio</a>
+          <!--login-->
+          <div class="container" id="login">
+              <div class="imagen">
+                  <img src="./assets/pc_soporte.jpeg" alt="" id="pc">
+              </div>
+              <div class="formulario" id="formulario">
+                  <p>usuario <input type="text"></p>
+                  <p>contraseña <input type="password"></p>
+                  <button>ingresar</button>
+                  <button id="salir" onclick="salir()">salir</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
