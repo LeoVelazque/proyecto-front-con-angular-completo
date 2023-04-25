@@ -6,13 +6,10 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
-  constructor(private datosPortfolio:PortfolioService) {
+  constructor() {
 
   }
 
-  ngOnInit():void{
-    this.datosPortfolio.obtenerDatos();
-  }
 }
