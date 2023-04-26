@@ -1,1 +1,15 @@
 
+p {
+  margin-bottom: 2px;
+  margin-top: 40px;
+  padding: 4px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-stretch: expanded;
+
+}
+
+#skill {
+  background-color: rgba(41, 41, 41, 0.452);
+  border-radius: 150px;
+  margin-bottom: 20px;
+}
