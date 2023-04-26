@@ -1,75 +1,159 @@
 <section id="habilidades">
   <div class="contenedor-skills">
       <h3>Mis habilidades</h3>
-      <div class="skill" id="html">
-          <H2>HTML</H2>
-          <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%; filter: invert();"></div>
-              </div>
-          <h2>95%</h2>
-          </div>
-      <div class="skill" id="css">
-          <h2>CSS</h2>
-          <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%; filter: invert();"></div>
-              </div>
-          <h2>90%</h2>
-      </div>
-      <div class="skill" id="javascrypt">
-          <h2>JAVASCRYPT</h2>
-          <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%; filter: invert();"></div>
-              </div>
-          <h2>70%</h2>
-      </div>
-      <div class="skill" id="bootstrap">
-          <h2>BOOTSTRAP</h2>
-          <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%; filter: invert();"></div>
-              </div>
-          <h2>95%</h2>
-      </div>
-      <div class="skill" id="angular">
-          <h2>ANGULAR</h2>
-          <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%; filter: invert();"></div>
-              </div>
-          <h2>80%</h2>
-      </div>
-      <div class="skill" id="DB, SQL, MYSQL">
-          <h2>BASE DE DATOS RELACIONAL</h2>
-          <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%; filter: invert();"></div>
-              </div>
-          <h2>85%</h2>
-      </div>
-      <div class="skill" id="POO">
-          <h2>POO</h2>
-          <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%; filter: invert();"></div>
-              </div>
-          <h2>90%</h2>
-      </div>
-      <div class="skill" id="JAVA">
-          <h2>JAVA</h2>
-          <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%; filter: invert();"></div>
-              </div>
-          <h2>60%</h2>
-      </div>
-      <div class="skill" id="SPRINGBOOT">
-          <h2>SPRINGBOOT</h2>
-          <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%; filter: invert();"></div>
-              </div>
-          <h2>70%</h2>
-      </div>
-      <div class="skill" id="DEVOPS">
-          <h2>DEVOPS</h2>
-          <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%; filter: invert();"></div>
-              </div>
-          <h2>60%</h2>
+      <div class="row">
+        <!--html-->
+        <div class="col col-sm-12 col-md-6 col-lg-4">
+        <circle-progress
+          [percent]="95"
+          [radius]="100"
+          [imageSrc]="'./assets/html.png'"
+          [showImage]="true"
+          [imageHeight]="80"
+          [imageWidth]="80"
+          [backgroundColor]="'white'"
+          [showBackground]="true"
+          [outerStrokeWidth]="16"
+          [innerStrokeWidth]="8"
+          [outerStrokeColor]="'#e69138'"
+          [innerStrokeColor]="'#b45f06'"
+          [animation]="true"
+          [animationDuration]="300">
+        </circle-progress>
+        </div>
+        <!--css-->
+        <div class="col col-sm-12 col-md-6 col-lg-4">
+          <circle-progress
+            [percent]="90"
+            [radius]="100"
+            [imageSrc]="'./assets/CSS.png'"
+            [showImage]="true"
+            [imageHeight]="80"
+            [imageWidth]="80"
+            [backgroundColor]="'white'"
+            [showBackground]="true"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#9fc5e8'"
+            [innerStrokeColor]="'#3d85c6'"
+            [animation]="true"
+            [animationDuration]="300">
+          </circle-progress>
+        </div>
+        <!--js-->
+        <div class="col col-sm-12 col-md-6 col-lg-4">
+          <circle-progress
+            [percent]="70"
+            [radius]="100"
+            [imageSrc]="'./assets/js.png'"
+            [showImage]="true"
+            [imageHeight]="80"
+            [imageWidth]="80"
+            [backgroundColor]="'white'"
+            [showBackground]="true"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#ffd700'"
+            [innerStrokeColor]="'#e2c007'"
+            [animation]="true"
+            [animationDuration]="300">
+          </circle-progress>
+        </div>
+        <!--angular-->
+        <div class="col col-sm-12 col-md-6 col-lg-4">
+          <circle-progress
+            [percent]="80"
+            [radius]="100"
+            [imageSrc]="'./assets/angular.png'"
+            [showImage]="true"
+            [imageHeight]="120"
+            [imageWidth]="150"
+            [backgroundColor]="'white'"
+            [showBackground]="true"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#f44336'"
+            [innerStrokeColor]="'#c4251a'"
+            [animation]="true"
+            [animationDuration]="300">
+          </circle-progress>
+        </div>
+        <!--mysql-->
+        <div class="col col-sm-12 col-md-6 col-lg-4">
+          <circle-progress
+            [percent]="85"
+            [radius]="100"
+            [imageSrc]="'./assets/mysql.png'"
+            [showImage]="true"
+            [imageHeight]="100"
+            [imageWidth]="100"
+            [backgroundColor]="'white'"
+            [showBackground]="true"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#2986cc'"
+            [innerStrokeColor]="'#e69138'"
+            [animation]="true"
+            [animationDuration]="300">
+          </circle-progress>
+        </div>
+        <!--java-->
+        <div class="col col-sm-12 col-md-6 col-lg-4">
+          <circle-progress
+            [percent]="60"
+            [radius]="100"
+            [imageSrc]="'./assets/java.png'"
+            [showImage]="true"
+            [imageHeight]="120"
+            [imageWidth]="150"
+            [backgroundColor]="'white'"
+            [showBackground]="true"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#2986cc'"
+            [innerStrokeColor]="'#c4251a'"
+            [animation]="true"
+            [animationDuration]="300">
+          </circle-progress>
+        </div>
+        <!--springboot-->
+        <div class="col col-sm-12 col-md-6 col-lg-4">
+          <circle-progress
+            [percent]="70"
+            [radius]="100"
+            [imageSrc]="'./assets/springboot.png'"
+            [showImage]="true"
+            [backgroundColor]="'white'"
+            [showBackground]="true"
+            [imageHeight]="100"
+            [imageWidth]="100"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#8fce00'"
+            [innerStrokeColor]="'#6aa84f'"
+            [animation]="true"
+            [animationDuration]="300">
+          </circle-progress>
+        </div>
+        <!--equipo-->
+        <div class="col col-sm-12 col-md-6 col-lg-4">
+          <circle-progress
+            [percent]="100"
+            [radius]="100"
+            [imageSrc]="'./assets/equipo.png'"
+            [showImage]="true"
+            [imageHeight]="100"
+            [imageWidth]="100"
+            [backgroundColor]="'white'"
+            [showBackground]="true"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#9fc5e8'"
+            [innerStrokeColor]="'#3d85c6'"
+            [animation]="true"
+            [animationDuration]="300">
+          </circle-progress>
+        </div>
       </div>
   </div>
 </section>
