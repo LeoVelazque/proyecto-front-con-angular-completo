@@ -1,0 +1,27 @@
+/*login*/
+#login {
+    text-align: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 220px;
+    padding: 9px;
+    padding-right: 3px;
+    background: linear-gradient(rgb(36, 179, 192), rgb(18, 155, 193), rgba(36, 140, 165, 0.831));
+    position: fixed;
+  }
+  
+  #login .imagen #pc {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 20%;
+  }
+  
+  #login .formulario {
+    display: block;
+  }
+  #login .formulario p input {
+    border-radius: 5px;
+    display: block;
+  }

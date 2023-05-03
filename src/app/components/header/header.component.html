@@ -25,8 +25,9 @@
                   <a href=""><i class="fa-brands fa-linkedin"></i></a>
                 </div>
               </div>
-              <div id="login2" onclick="registrarse()">
-                <i class="fa-solid fa-right-to-bracket">  ingresar</i>
+              <div id="login2">
+                <i class="fa-solid fa-right-to-bracket" (click)="login()">  ingresar</i>
+                <i class="fa-solid fa-right-to-bracket" *ngIf="userLogged|async as user"> salir</i>
             </div>
           </div>
       </header>
@@ -36,31 +37,7 @@
           <h2>Developer Full Stack Junior</h2>
           <p class="descripcion">una descripcion en la que no se que poner jasjsj</p>
           <a href="#acerca_de">ir a portfolio</a>
-          <!--login-->
-          <div class="container" id="login">
-              <div class="imagen">
-                  <img src="./assets/pc_soporte.jpeg" alt="" id="pc">
-              </div>
-              <div class="formulario" id="formulario">
-                  <p>usuario <input type="text"></p>
-                  <p>contraseña <input type="password"></p>
-                  <button (click)="login()">ingresar</button>
-                  <button id="salir" onclick="salir()">salir</button>
-              </div>
-          </div>
       </div>
   </div>
-  <!--login-->
-<div class="container" id="login">
-    <div class="imagen">
-        <img src="./assets/pc_soporte.jpeg" alt="" id="pc">
-    </div>
-    <div class="formulario" id="formulario">
-        <p>usuario <input type="text"></p>
-        <p>contraseña <input type="password"></p>
-        <button>ingresar</button>
-        <button id="salir" onclick="salir()">salir</button>
-    </div>
-</div>
 </section>
 

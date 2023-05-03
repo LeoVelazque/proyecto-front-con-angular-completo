@@ -14,7 +14,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { FormsModule } from '@angular/forms';
+import { AngularFireModule} from '@angular/fire/compat';
 
+const firebaseConfig = {
+  apiKey: "AIzaSyAtnGinBm8X6nAN8LtlJkXJARWWdtZg5LM",
+  authDomain: "portfolio-leo-firebase-auth.firebaseapp.com",
+  projectId: "portfolio-leo-firebase-auth",
+  storageBucket: "portfolio-leo-firebase-auth.appspot.com",
+  messagingSenderId: "566057910924",
+  appId: "1:566057910924:web:42d317a36ac6d8d33db1a9"
+};
 
 @NgModule({
   declarations: [
@@ -35,6 +45,8 @@ import { RegisterComponent } from './components/register/register.component';
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
+    FormsModule,
+    AngularFireModule.initializeApp(firebaseConfig),
   ],
   providers: [],
   bootstrap: [AppComponent]

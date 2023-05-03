@@ -1,4 +1,4 @@
-
+import { AuthService } from 'src/app/servicios/auth.service';
 import { Component} from '@angular/core';
 
 @Component({

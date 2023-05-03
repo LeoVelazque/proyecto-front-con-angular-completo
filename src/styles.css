@@ -4,34 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/*login*/
-#login {
-  display: none;
-  text-align: center;
-  align-items: center;
-  border: 2px solid black;
-  border-radius: 15px;
-  width: 220px;
-  padding: 9px;
-  padding-right: 3px;
-  background: linear-gradient(rgba(206, 206, 206, 0.562), rgb(143, 143, 143), rgba(0, 0, 0, 0.733));
-  position: fixed;
-}
 
-#login .imagen #pc {
-  width: 80%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 20%;
-}
-
-#login .formulario {
-  display: block;
-}
-#login .formulario p input {
-  border-radius: 5px;
-  display: block;
-}
 
 /*inicio*/
 

@@ -1,1 +1,13 @@
-<p>login works!</p>
+<div class="container" id="login">
+    <div class="imagen">
+        <img src="./assets/pc_soporte.jpeg" alt="" id="pc">
+    </div>
+    <div class="formulario" id="formulario">
+        <p>correo <input type="email" class="form-control" [(ngModel)]="usuario.email"></p>
+        <p>contraseña <input type="password" class="form-control" [(ngModel)]="usuario.password"><label for="password"></label></p>
+        <button class="btn btn-primary btn-block" (click)="Ingresar()">ingresar</button>
+        <label>Aun no tienes cuenta?<a href="#">registrarse</a></label>
+        <button class="btn btn-info btn-block m2" (click)="obtenerUsuarioLogeado()">usuario logeado</button>
+        <button class="btn btn-info btn-block m2" (click)="logout()">log out</button>
+    </div>
+</div>
