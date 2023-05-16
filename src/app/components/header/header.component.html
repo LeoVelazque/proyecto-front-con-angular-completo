@@ -27,7 +27,7 @@
               </div>
               <div id="login2">
                 <i class="fa-solid fa-right-to-bracket" (click)="login()">  ingresar</i>
-                <i class="fa-solid fa-right-to-bracket" *ngIf="userLogged|async as user"> salir</i>
+                <i class="fa-solid fa-right-to-bracket" id="logOut" (click)="logout()" *ngIf="userLogged|async as User"> salir</i>
             </div>
           </div>
       </header>
@@ -35,7 +35,7 @@
           <p class="bienvenida">bienvenidos</p>
           <h2><span id="nombre_presentacion">{{persona.nombre}}{{persona.apellido}} </span></h2>
           <h2>Developer Full Stack Junior</h2>
-          <p class="descripcion">una descripcion en la que no se que poner jasjsj</p>
+          <p class="descripcion">{{persona.descripcion}} </p>
           <a href="#acerca_de">ir a portfolio</a>
       </div>
   </div>

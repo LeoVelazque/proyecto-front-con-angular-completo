@@ -4,15 +4,18 @@
           <div class="row">
               <div class="col col-sm-12 col-md-6 col-lg-6">
                   <div class="contenedor-foto">
-                      <img src="./assets/perfil_anime.png" alt="" id="fotoPerfil">
+                      <img src={{persona.img}} alt="" id="fotoPerfil">
+                      <input type="text" [(ngModel)]="persona.img" *ngIf="userLogged|async as user">
                   </div>
               </div>
-              <div class="col col-sm-12 col-md-6 col-lg-6">
+              <div class="col col-sm-12 col-md-6 col-lg-6"><button type="button" class="btn btn-primary" (click)="guardarPersona()" *ngIf="userLogged|async as user">guardar cambios</button>
                   <p class="titulo-seccion">sobre mi:</p>
-                  <h2>Hola, soy <span id="nombre">{{persona.nombre}}{{persona.apellido}} </span></h2>
+                  <h2>Hola, soy <span id="nombre">{{persona.nombre}} 
+                    <input type="text" [(ngModel)]="persona.nombre" *ngIf="userLogged|async as user"> </span>
+                    <span id="nombre"> {{persona.apellido}} 
+                        <input type="text" [(ngModel)]="persona.apellido" *ngIf="userLogged|async as user"></span></h2>
                   <h3>desarrollador web</h3>
-                  <p>Sit tempor anim exercitation proident mollit. Consectetur et pariatur occaecat nostrud. Minim anim velit reprehenderit excepteur.</p>
-                  <p>Velit nostrud cupidatat do veniam.</p>
+                  <p>{{persona.descripcion}} <input type="text" [(ngModel)]="persona.descripcion" *ngIf="userLogged|async as user"></p>
                   <a href="#">descargar CV.</a>
               </div>
           </div>

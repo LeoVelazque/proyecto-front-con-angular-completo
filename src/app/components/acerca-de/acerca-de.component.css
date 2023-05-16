@@ -1,0 +1,20 @@
+#boton-editor {
+    display:block;
+    margin-left: 300px;
+    color: #000000;  
+    padding: 8px;
+    border-radius: 100%;
+    text-align: right;
+}
+
+#boton-editor:hover {
+    background-color: #f3ef0c;
+    animation: tiembla 1s infinite;
+    
+}
+
+@keyframes tiembla{
+    0%  { -webkit-transform:rotateZ(-5deg); }
+    50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
+    100%{ -webkit-transform:rotateZ( 5deg); }
+    }

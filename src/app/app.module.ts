@@ -8,7 +8,7 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
-import  {  NgCircleProgressModule  }  from  'ng-circle-progress';
+import {  NgCircleProgressModule  }  from  'ng-circle-progress';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
@@ -16,6 +16,13 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { FormsModule } from '@angular/forms';
 import { AngularFireModule} from '@angular/fire/compat';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
+
+
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyAtnGinBm8X6nAN8LtlJkXJARWWdtZg5LM",
@@ -39,6 +46,9 @@ const firebaseConfig = {
     HomeComponent,
     LoginComponent,
     RegisterComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -47,6 +57,8 @@ const firebaseConfig = {
     HttpClientModule,
     FormsModule,
     AngularFireModule.initializeApp(firebaseConfig),
+    MatSnackBarModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

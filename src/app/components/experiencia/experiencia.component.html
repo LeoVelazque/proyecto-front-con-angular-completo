@@ -1,19 +1,23 @@
 <section id="experiencia">
   <h3 class="titulo-seccion">Mi experiencia</h3>
   <!--1-->
-  <div class="row" id="experiencias">
+  <button type="button" class="btn btn-primary" routerLink="/nuevaexp" *ngIf="userLogged|async as user">
+    nueva experiencia
+  </button>
+  <div class="row" id="experiencias" *ngFor="let Experiencia of Exp">
       <div class="col col-sm-12 col-md-5 col-lg-3">
           <div class="logo">
               <img src="./assets/logo ospepri.png" alt="logo">
           </div>
       </div>
       <div class="col col-sm-12 col-md-7 col-lg-9">
-          <h2>sindicato de petroleo y gas privado</h2>
-          <h3>IT - soporte tecnico</h3>
-          <p>Al ser el unico personal en sistemas me encargo de manejar el servidor, la base de datos, mantenimiento de equipos, programacion basica PHP, analisis y busqueda en DB (Xammp, my sql, apache), manteninimiento de impresoras, control de active directory y redes de comunicacion, internet y telefonia.</p>
+          <h2>{{Experiencia.nombre_de_empresa}}</h2>
+          <h3>{{Experiencia.nombre_del_puesto}}</h3><p>{{Experiencia.fecha_inicio}}_hasta_{{Experiencia.fecha_fin}} </p>
+          <p>{{Experiencia.descripcion_empresa}}</p>
+          <td><button class="btn btn-success" routerLink="/editexp/{{Experiencia.id}}">editar</button></td>
       </div>
   </div>
-  <!--2-->
+  <!--2--
   <div class="row" id="experiencias">
       <div class="col col-sm-12 col-md-5 col-lg-3">
           <div class="logo">
@@ -28,7 +32,7 @@
           </div>
       </div>
   </div>
-  <!--3-->
+  --3--
   <div class="row" id="experiencias">
       <div class="col col-sm-12 col-md-5 col-lg-3">
           <div class="logo">
@@ -43,7 +47,7 @@
           </div>
       </div>
   </div>
-  <!--4-->
+  --4--
   <div class="row" id="experiencias">
       <div class="col col-sm-12 col-md-5 col-lg-3">
           <div class="logo">
@@ -58,4 +62,5 @@
           </div>
       </div>
   </div>
+-->
 </section>
